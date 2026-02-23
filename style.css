@@ -35,7 +35,7 @@ a:hover{color:#c0623f}
 .nav-toggle span{display:block;width:24px;height:2px;background:#1a1a2e;margin:5px 0;transition:.3s}
 
 /* ===== Hero ===== */
-.hero{padding:8rem 0 5rem;background:linear-gradient(170deg,#fff 60%,#fdf5f2 100%)}
+.hero{padding:8rem 0 5rem;background:linear-gradient(180deg,#fff 40%,#fdf5f2 70%,#fff 100%)}
 .hero .container{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3rem}
 .hero-content{max-width:720px}
 .hero-content h1{font-size:3rem;line-height:1.15;font-weight:800;color:#1a1a2e;margin-bottom:1rem}
