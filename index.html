@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting AI Analyser - Real-Time Meeting Transcription & AI Analysis, 100% Local</title>
+    <meta
+      name="description"
+      content="Transcribe and analyze your meetings in real-time with AI, 100% locally on your PC. Works with Teams, Zoom, Google Meet. Free download for Windows."
+    />
+    <meta
+      name="keywords"
+      content="meeting transcription, AI meeting notes, local transcription, privacy meeting tool, real-time transcription, meeting summary"
+    />
+    <link rel="canonical" href="https://meetingaianalyser.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Meeting AI Analyser - Real-Time Transcription & AI Analysis" />
+    <meta
+      property="og:description"
+      content="Transcribe and analyze your meetings in real-time, 100% locally. Works with any meeting software. Free download."
+    />
+    <meta property="og:image" content="images/og-image.png" />
+    <meta property="og:url" content="https://meetingaianalyser.com/" />
+    <meta property="og:site_name" content="Meeting AI Analyser" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Meeting AI Analyser - Real-Time Transcription & AI Analysis" />
+    <meta
+      name="twitter:description"
+      content="Transcribe and analyze your meetings in real-time, 100% locally. Free download."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Meeting AI Analyser",
+        "operatingSystem": "Windows 10, Windows 11",
+        "applicationCategory": "BusinessApplication",
+        "description": "Real-time meeting transcription and AI analysis software that runs 100% locally on your PC.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "name": "Free"
+        },
+        "downloadUrl": "https://meetingaianalyser.com/downloads/MeetingAIAnalyser.exe",
+        "softwareVersion": "1.0",
+        "author": {
+          "@type": "Organization",
+          "name": "Neoteem"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ===== Nav ===== -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="#" class="nav-logo" aria-label="Meeting AI Analyser home">
+          <img src="images/logo-transparant.png" alt="Meeting AI Analyser logo" width="32" height="32" />
+          Meeting AI Analyser
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#comparison">Compare</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#download" class="btn btn-primary btn-sm nav-cta">Download Free</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ===== 1. Hero ===== -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Real-Time Meeting Transcription & <span>AI Analysis</span>, 100% Local</h1>
+            <p>
+              Launch the app, join your meeting, get a structured summary instantly. Your data stays on your PC - no
+              audio ever leaves your machine.
+            </p>
+            <div class="hero-buttons">
+              <a href="downloads/MeetingAIAnalyser.exe" download class="btn btn-primary btn-lg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download Free
+              </a>
+              <a href="#features" class="btn btn-outline btn-lg">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="app-window">
+              <div class="app-window-bar">
+                <div class="app-window-dots"><span></span><span></span><span></span></div>
+                <div class="app-window-title">Meeting AI Analyser</div>
+                <div class="app-window-dots" style="visibility: hidden"><span></span><span></span><span></span></div>
+              </div>
+              <div class="app-window-body">
+                <img
+                  src="images/software-screenshoot.png"
+                  alt="Meeting AI Analyser - real-time transcription and Claude AI analysis side by side"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. Social Proof / Badges ===== -->
+      <section class="section" style="padding-top: 2rem; padding-bottom: 3rem">
+        <div class="container">
+          <div class="badges">
+            <div class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              100% Local & Private
+            </div>
+            <div class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#d97757" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l2 2 4-4" />
+              </svg>
+              Free Forever
+            </div>
+            <div class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              Windows 10 & 11
+            </div>
+            <div class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                <path d="M9 9h6v6H9z" />
+              </svg>
+              Open Source
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. Features ===== -->
+      <section class="section section-alt" id="features">
+        <div class="container">
+          <div class="section-header">
+            <h2>Powerful Features, Zero Compromise</h2>
+            <p>
+              Everything you need to capture, transcribe, and analyze your meetings - without sending a single byte to
+              the cloud.
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                  <line x1="12" y1="19" x2="12" y2="23" />
+                  <line x1="8" y1="23" x2="16" y2="23" />
+                </svg>
+              </div>
+              <h3>Real-Time Transcription</h3>
+              <p>
+                Captures system audio and microphone simultaneously using Whisper AI. Works with Teams, Zoom, Google
+                Meet, or any meeting software.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </div>
+              <h3>AI-Powered Analysis</h3>
+              <p>
+                Claude AI generates structured summaries every 60 seconds: key decisions, action items, participants,
+                and next steps - all automatically.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>100% Private</h3>
+              <p>
+                All transcription runs locally on your machine using Whisper. No audio is ever uploaded. Your
+                conversations stay yours.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <h3>Export & History</h3>
+              <p>
+                Export meeting notes as Markdown or PDF. Browse your full meeting history and search across all past
+                sessions.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                  />
+                </svg>
+              </div>
+              <h3>Highly Configurable</h3>
+              <p>
+                Choose Whisper model size (tiny to large-v3), select microphone, set language, and control analysis
+                frequency to match your needs.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3>Works with Everything</h3>
+              <p>
+                Captures audio from any application - Teams, Zoom, Google Meet, browser tabs, or any software playing
+                audio on your system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. How It Works ===== -->
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-header">
+            <h2>Up and Running in 3 Steps</h2>
+            <p>No signup, no configuration, no browser extension. Just launch and go.</p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <h3>Launch the App</h3>
+              <p>
+                Double-click MeetingAIAnalyser.exe. The web dashboard opens automatically in your browser at
+                localhost:5555.
+              </p>
+            </div>
+            <div class="step">
+              <h3>Join Your Meeting</h3>
+              <p>
+                Open Teams, Zoom, Meet, or any conferencing tool. Meeting AI Analyser captures system audio
+                automatically - no bot joins your call.
+              </p>
+            </div>
+            <div class="step">
+              <h3>Get Your Summary</h3>
+              <p>
+                Watch the live transcription and receive an AI-generated structured summary with decisions, action
+                items, and key takeaways.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. Comparison ===== -->
+      <section class="section section-alt" id="comparison">
+        <div class="container">
+          <div class="section-header">
+            <h2>How We Compare</h2>
+            <p>See how Meeting AI Analyser stacks up against popular cloud-based alternatives.</p>
+          </div>
+          <div class="comparison-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th class="highlight">Meeting AI Analyser</th>
+                  <th>Otter.ai</th>
+                  <th>Fireflies.ai</th>
+                  <th>Tactiq</th>
+                  <th>tl;dv</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>100% Local Processing</td>
+                  <td class="highlight"><span class="check">&#10003;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                  <td>Free Tier</td>
+                  <td class="highlight"><span class="check">&#10003;</span> Unlimited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                </tr>
+                <tr>
+                  <td>AI-Powered Analysis</td>
+                  <td class="highlight"><span class="check">&#10003;</span> Claude AI</td>
+                  <td><span class="check">&#10003;</span></td>
+                  <td><span class="check">&#10003;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="check">&#10003;</span></td>
+                </tr>
+                <tr>
+                  <td>No Bot Joins Call</td>
+                  <td class="highlight"><span class="check">&#10003;</span></td>
+                  <td>N/A</td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td>N/A</td>
+                  <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                  <td>Open Source</td>
+                  <td class="highlight"><span class="check">&#10003;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                </tr>
+                <tr>
+                  <td>Multilingual</td>
+                  <td class="highlight"><span class="check">&#10003;</span></td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                </tr>
+                <tr>
+                  <td>Price</td>
+                  <td class="highlight"><strong>Free</strong></td>
+                  <td>$17/mo</td>
+                  <td>$18/mo</td>
+                  <td>$12/mo</td>
+                  <td>$25/mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. Pricing ===== -->
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-header">
+            <h2>100% Free</h2>
+            <p>All features included, no limits, no subscriptions. Just download and use.</p>
+          </div>
+          <div style="max-width:560px;margin:3rem auto 0">
+            <div class="pricing-card" style="border-color:#d97757;box-shadow:0 8px 30px rgba(217,119,87,.12)">
+              <h3>Free</h3>
+              <div class="pricing-price">€0</div>
+              <div class="pricing-note">Free forever — all features included</div>
+              <ul class="pricing-features">
+                <li>Unlimited real-time transcription</li>
+                <li>Full Claude AI analysis</li>
+                <li>System audio + microphone capture</li>
+                <li>Works with all meeting software</li>
+                <li>Local web dashboard</li>
+                <li>Action items & decisions extraction</li>
+              </ul>
+              <a
+                href="downloads/MeetingAIAnalyser.exe"
+                download
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+                >Download Free</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. Blog Preview ===== -->
+      <section class="section section-alt" id="blog">
+        <div class="container">
+          <div class="section-header">
+            <h2>From the Blog</h2>
+            <p>Insights on meeting productivity, privacy, and AI-powered tools.</p>
+          </div>
+          <div class="blog-grid">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="blog-card-body">
+                <div class="tag">Privacy</div>
+                <h3>Why Local Meeting Transcription Matters for Privacy</h3>
+                <p>
+                  Your meetings contain sensitive information. Here's why keeping transcription local is the smart
+                  choice.
+                </p>
+                <a href="blog.html#article-1">Read more &rarr;</a>
+              </div>
+            </div>
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                  <rect x="8" y="2" width="8" height="4" rx="1" />
+                  <path d="M9 14l2 2 4-4" />
+                </svg>
+              </div>
+              <div class="blog-card-body">
+                <div class="tag">Comparison</div>
+                <h3>Meeting AI Analyser vs Cloud Solutions: A Comparison</h3>
+                <p>How does a local-first approach compare to Otter.ai, Fireflies, and other cloud tools?</p>
+                <a href="blog.html#article-2">Read more &rarr;</a>
+              </div>
+            </div>
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </div>
+              <div class="blog-card-body">
+                <div class="tag">Productivity</div>
+                <h3>How to Get the Most Out of Your Meeting Notes with AI</h3>
+                <p>Practical tips for turning AI-generated meeting summaries into real productivity gains.</p>
+                <a href="blog.html#article-3">Read more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. Download CTA ===== -->
+      <section class="cta-section" id="download">
+        <div class="container">
+          <h2>Ready to Transform Your Meetings?</h2>
+          <p>
+            Download Meeting AI Analyser for free and start getting structured summaries from your very next meeting.
+          </p>
+          <a href="downloads/MeetingAIAnalyser.exe" download class="btn btn-primary btn-lg">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Free for Windows
+          </a>
+          <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.5">
+            Windows 10 & 11 - No signup required - ~130 MB
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== 9. Footer ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div>&copy; 2025 Neoteem. All rights reserved.</div>
+        <ul class="footer-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="mailto:contact@neoteem.com">Contact</a></li>
+        </ul>
+        <div class="footer-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          Made with Claude
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const target = document.querySelector(a.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+          document.querySelector(".nav-links")?.classList.remove("open");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Meeting AI Analyser</title>
+    <meta
+      name="description"
+      content="Articles on meeting transcription, AI analysis, privacy, and productivity. Learn how to get more from your meetings with local AI tools."
+    />
+    <link rel="canonical" href="https://meetingaianalyser.com/blog.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog - Meeting AI Analyser" />
+    <meta
+      property="og:description"
+      content="Articles on meeting transcription, AI analysis, privacy, and productivity."
+    />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav-logo" aria-label="Meeting AI Analyser home">
+          <img src="images/logo-transparant.png" alt="Meeting AI Analyser logo" width="32" height="32" />
+          Meeting AI Analyser
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#download" class="btn btn-primary btn-sm nav-cta">Download Free</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <div class="container">
+        <h1>Blog</h1>
+        <p>Insights on meeting productivity, privacy, and AI-powered tools.</p>
+      </div>
+    </section>
+
+    <main>
+      <!-- Article 1 -->
+      <article class="article" id="article-1">
+        <h2>Why Local Meeting Transcription Matters for Privacy</h2>
+        <div class="meta">Published February 2025 &middot; 6 min read</div>
+
+        <p>
+          Every day, millions of professionals discuss sensitive topics in virtual meetings: financial projections, HR
+          decisions, client strategies, product roadmaps, and legal matters. When you use a cloud-based transcription
+          service, every word of those conversations is transmitted to - and processed on - someone else's servers.
+        </p>
+
+        <h3>The Hidden Cost of Cloud Transcription</h3>
+        <p>
+          Most popular meeting transcription tools - Otter.ai, Fireflies.ai, tl;dv - operate on a simple model: your
+          audio goes up to their cloud, gets processed, and the transcript comes back. But what happens to that audio in
+          between?
+        </p>
+        <ul>
+          <li>
+            <strong>Data retention:</strong> Many services store your audio and transcripts for weeks or months,
+            sometimes indefinitely, to train their models.
+          </li>
+          <li>
+            <strong>Third-party access:</strong> Cloud providers, subprocessors, and potentially government agencies may
+            have access to your data.
+          </li>
+          <li>
+            <strong>Compliance risk:</strong> For industries governed by GDPR, HIPAA, or SOC 2, sending meeting audio to
+            third-party servers can create compliance violations.
+          </li>
+          <li>
+            <strong>Breach exposure:</strong> Every cloud service is a potential breach target. Your meeting content
+            becomes part of a larger attack surface.
+          </li>
+        </ul>
+
+        <h3>The Local-First Alternative</h3>
+        <p>
+          Local transcription eliminates these risks entirely. When transcription happens on your machine, your audio
+          never leaves your PC. There's no upload, no cloud processing, and no third-party storage.
+        </p>
+        <p>
+          Meeting AI Analyser uses OpenAI's Whisper model running locally on your hardware. The transcription engine
+          processes audio in real-time directly on your CPU or GPU - nothing is sent over the network.
+        </p>
+
+        <blockquote>
+          Your meetings contain your most sensitive business conversations. Why would you send them to a server you
+          don't control?
+        </blockquote>
+
+        <h3>What About AI Analysis?</h3>
+        <p>
+          The one area where Meeting AI Analyser does use a cloud service is for the AI-powered analysis step - sending
+          the transcript text (not audio) to Claude AI for structured summarization. This is optional and can be
+          disabled entirely with the <code>--no-analysis</code> flag for fully offline operation.
+        </p>
+        <p>
+          The key difference: a text transcript is far less sensitive than raw audio, and you have full control over
+          whether to use this feature.
+        </p>
+
+        <h3>Who Benefits Most from Local Transcription?</h3>
+        <ol>
+          <li><strong>Consultants and freelancers</strong> handling client-sensitive information</li>
+          <li><strong>Legal professionals</strong> discussing privileged matters</li>
+          <li><strong>Healthcare organizations</strong> subject to HIPAA requirements</li>
+          <li><strong>Financial institutions</strong> with strict data governance policies</li>
+          <li><strong>Any privacy-conscious professional</strong> who values data sovereignty</li>
+        </ol>
+
+        <p>Local-first isn't just a feature - it's a philosophy. Your data, your machine, your control.</p>
+
+        <p><a href="index.html#download">Download Meeting AI Analyser</a> and keep your meetings private.</p>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="article" id="article-2">
+        <h2>Meeting AI Analyser vs Cloud Solutions: A Comparison</h2>
+        <div class="meta">Published February 2025 &middot; 7 min read</div>
+
+        <p>
+          The market for meeting transcription tools has exploded. Otter.ai, Fireflies.ai, Tactiq, and tl;dv all promise
+          to capture and summarize your meetings. But they all share one fundamental design choice: your data goes to
+          their cloud. Let's see how a local-first tool compares.
+        </p>
+
+        <h3>Privacy and Data Control</h3>
+        <p>
+          This is the most significant difference. Cloud tools require you to trust a third party with your meeting
+          audio and transcripts. Meeting AI Analyser processes everything locally using the Whisper speech-to-text
+          model.
+        </p>
+        <p>
+          For organizations in regulated industries - or anyone who simply prefers to keep their conversations private -
+          this is a decisive advantage.
+        </p>
+
+        <h3>Cost Structure</h3>
+        <p>Cloud-based tools typically charge monthly subscriptions:</p>
+        <ul>
+          <li><strong>Otter.ai:</strong> $17/month (Pro plan)</li>
+          <li><strong>Fireflies.ai:</strong> $18/month (Pro plan)</li>
+          <li><strong>Tactiq:</strong> $12/month (Pro plan)</li>
+          <li><strong>tl;dv:</strong> $25/month (Pro plan)</li>
+        </ul>
+        <p>
+          Meeting AI Analyser offers a generous free tier with unlimited transcription. The Pro license is a one-time
+          payment of €29 - no recurring costs. Over a year, that's a fraction of what you'd pay for any cloud
+          alternative.
+        </p>
+
+        <h3>Meeting Bot Problem</h3>
+        <p>
+          Several cloud tools (Fireflies, tl;dv) work by joining your meeting as a bot participant. This creates awkward
+          moments - participants see an unfamiliar name in the call, and some may feel uncomfortable knowing they're
+          being recorded by a third-party service.
+        </p>
+        <p>
+          Meeting AI Analyser captures system audio directly through Windows' audio interface (WASAPI). No bot joins
+          your call. Nobody in the meeting even knows you're transcribing - unless you choose to tell them.
+        </p>
+
+        <h3>Transcription Quality</h3>
+        <p>
+          All tools in this space use some form of speech-to-text AI. Meeting AI Analyser uses OpenAI's Whisper, which
+          is widely considered one of the best open-source speech recognition models available. You can choose from
+          multiple model sizes (tiny to large-v3) to balance speed and accuracy for your hardware.
+        </p>
+
+        <h3>AI Analysis Quality</h3>
+        <p>
+          Meeting AI Analyser uses Claude AI for meeting analysis - generating structured summaries, extracting action
+          items, identifying decisions, and noting key discussion points. Claude is recognized as one of the most
+          capable AI models for text understanding and summarization.
+        </p>
+
+        <h3>The Verdict</h3>
+        <p>
+          If privacy, cost-efficiency, and simplicity are your priorities, Meeting AI Analyser offers a compelling
+          alternative to cloud-based tools. You get professional-grade transcription and AI analysis without monthly
+          fees, without data leaving your machine, and without bots joining your calls.
+        </p>
+
+        <p>
+          <a href="index.html#comparison">See the full comparison table</a> or
+          <a href="index.html#download">download free</a>.
+        </p>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="article" id="article-3">
+        <h2>How to Get the Most Out of Your Meeting Notes with AI</h2>
+        <div class="meta">Published February 2025 &middot; 5 min read</div>
+
+        <p>
+          Having an AI transcribe and summarize your meetings is powerful - but the real value comes from what you do
+          with those summaries. Here are practical strategies to turn AI-generated meeting notes into real productivity
+          gains.
+        </p>
+
+        <h3>1. Review Action Items Immediately</h3>
+        <p>
+          Meeting AI Analyser extracts action items with assigned owners automatically. The most effective habit is to
+          review these within 15 minutes of the meeting ending. Send the action items to your task manager or share them
+          with the team while the context is fresh.
+        </p>
+
+        <h3>2. Use Summaries as Stand-Up Updates</h3>
+        <p>
+          Instead of manually writing status updates, use your AI meeting summaries as the basis for daily stand-ups or
+          weekly reports. The structured format - decisions made, items discussed, next steps - maps directly to what
+          stakeholders want to know.
+        </p>
+
+        <h3>3. Build a Searchable Meeting Archive</h3>
+        <p>
+          With Meeting AI Analyser's history feature, every meeting is stored locally and searchable. This becomes
+          invaluable when you need to recall what was decided three weeks ago, or find the meeting where a specific
+          topic was discussed.
+        </p>
+
+        <blockquote>
+          The average professional spends 31 hours per month in unproductive meetings. AI-powered notes ensure that at
+          least the productive parts are captured and actionable.
+        </blockquote>
+
+        <h3>4. Share Selectively, Not Wholesale</h3>
+        <p>
+          Not everyone needs the full transcript. Use the export feature to share just the summary and action items with
+          stakeholders who weren't in the meeting. This respects everyone's time while keeping them informed.
+        </p>
+
+        <h3>5. Choose the Right Whisper Model</h3>
+        <p>Meeting AI Analyser lets you select from multiple Whisper model sizes:</p>
+        <ul>
+          <li><strong>tiny/base:</strong> Fast, lower accuracy - good for quick internal calls</li>
+          <li><strong>small:</strong> Balanced (default) - works well for most meetings</li>
+          <li>
+            <strong>medium/large-v3:</strong> Highest accuracy - ideal for important client meetings or multilingual
+            calls
+          </li>
+        </ul>
+        <p>
+          Match the model to the importance of the meeting. A casual team sync doesn't need large-v3, but a client
+          strategy session does.
+        </p>
+
+        <h3>6. Combine with Your Existing Workflow</h3>
+        <p>
+          Export meeting notes as Markdown and integrate them directly into your documentation tools - Notion, Obsidian,
+          Confluence, or plain file systems. The Markdown format is universally compatible and keeps your notes
+          portable.
+        </p>
+
+        <h3>Start Capturing Value Today</h3>
+        <p>
+          The best meeting tool is the one you actually use. Meeting AI Analyser requires zero setup - no accounts, no
+          browser extensions, no meeting integrations. Launch it before your next meeting and see the difference
+          immediately.
+        </p>
+
+        <p><a href="index.html#download">Download Meeting AI Analyser free</a> and make every meeting count.</p>
+      </article>
+    </main>
+
+    <div class="back-to-top">
+      <a href="#" class="btn btn-outline">Back to top &uarr;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>&copy; 2025 Neoteem. All rights reserved.</div>
+        <ul class="footer-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="mailto:contact@neoteem.com">Contact</a></li>
+        </ul>
+        <div class="footer-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          Made with Claude
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
