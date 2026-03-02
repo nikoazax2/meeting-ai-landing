@@ -1,11 +1,11 @@
-# Marketing — Meeting AI Analyser
+# Marketing, Meeting AI Analyser
 
 Angles clés : **gratuit, 100% local, privacy-first** (vs concurrents SaaS cloud payants)
 
 ## Lancement (impact immédiat)
 
-- **Product Hunt** — préparer screenshot + démo GIF
-- **Hacker News** (Show HN) — audience tech, angle privacy
+- **Product Hunt**, préparer screenshot + démo GIF
+- **Hacker News** (Show HN), audience tech, angle privacy
 
 ## Reddit
 
@@ -20,12 +20,12 @@ Angles clés : **gratuit, 100% local, privacy-first** (vs concurrents SaaS cloud
 
 ## Communautés tech
 
-- **Dev.to / Hashnode** — article "How I built a local meeting AI analyser"
-- **IndieHackers** — communauté makers
+- **Dev.to / Hashnode**, article "How I built a local meeting AI analyser"
+- **IndieHackers**, communauté makers
 - Discords : Anthropic/Claude, AI tools, indie makers
 
 ## Référencement / listings
 
 - **AlternativeTo** (alternative à Otter.ai, Fireflies, etc.)
 - **There's An AI For That**, **FutureTools**, **ToolsForHumans**
-- GitHub — description + topics bien remplis
+- GitHub, description + topics bien remplis
