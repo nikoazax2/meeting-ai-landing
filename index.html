@@ -61,12 +61,20 @@
         "operatingSystem": "Windows 10, Windows 11",
         "applicationCategory": "BusinessApplication",
         "description": "Real-time meeting transcription (local Whisper) and AI analysis (Claude) software for Windows.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "EUR",
-          "name": "Free"
-        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "name": "Free Trial (7 days)"
+          },
+          {
+            "@type": "Offer",
+            "price": "29",
+            "priceCurrency": "EUR",
+            "name": "Pro License"
+          }
+        ],
         "downloadUrl": "https://github.com/nikoazax2/meeting-ai-analyser/releases",
         "softwareVersion": "1.0.2",
         "author": {
@@ -105,13 +113,14 @@
               >GitHub</a
             >
           </li>
+          <li><a href="#pricing">Pricing</a></li>
           <li>
             <a
               href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
               target="_blank"
               rel="noopener"
               class="btn btn-primary btn-sm nav-cta"
-              >Download</a
+              >Try Free</a
             >
           </li>
         </ul>
@@ -131,10 +140,18 @@
             </p>
             <div class="hero-buttons">
               <a
-                href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
+                href="https://meetingai.lemonsqueezy.com/buy/862245"
                 target="_blank"
                 rel="noopener"
                 class="btn btn-primary btn-lg"
+              >
+                Buy Pro — €29
+              </a>
+              <a
+                href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline btn-lg"
               >
                 <svg
                   width="20"
@@ -150,20 +167,16 @@
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                Download Free
-              </a>
-              <a
-                href="https://github.com/nikoazax2/meeting-ai-analyser"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-outline btn-lg"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                View Source on GitHub
+                Free Trial (7 days)
               </a>
             </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.5">
+              Requires
+              <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline">Claude Code CLI</a>
+              +
+              <a href="https://claude.ai/pricing" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline">Claude subscription</a>
+              (Pro/Team/Enterprise)
+            </p>
           </div>
           <div class="hero-visual">
             <div class="app-window">
@@ -198,7 +211,7 @@
                 <circle cx="12" cy="12" r="10" />
                 <path d="M8 12l2 2 4-4" />
               </svg>
-              Free Forever
+              7-Day Free Trial
             </div>
             <div class="badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
@@ -366,15 +379,17 @@
         <div class="container">
           <div class="section-header">
             <h2>Up and Running in 3 Steps</h2>
-            <p>No signup, no browser extension. Just install Claude Desktop, launch the app, and go.</p>
+            <p>No signup, no browser extension. Just install Claude Code CLI, launch the app, and go.</p>
           </div>
           <div class="steps">
             <div class="step">
-              <h3>Install Claude Desktop</h3>
+              <h3>Install Claude Code CLI</h3>
               <p>
-                Download and install
-                <a href="https://claude.ai/download" target="_blank" rel="noopener">Claude Desktop</a> (free). Meeting
-                AI Analyser uses Claude AI to analyze your meeting transcripts in real time.
+                Install
+                <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>
+                on your machine. You also need an active
+                <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude subscription</a>
+                (Pro, Team or Enterprise). Meeting AI Analyser uses Claude to analyze your transcripts in real time.
               </p>
             </div>
             <div class="step">
@@ -473,11 +488,19 @@
                 </tr>
                 <tr>
                   <td>Price</td>
-                  <td class="highlight"><strong>Free</strong></td>
+                  <td class="highlight"><strong>29€ one-time</strong></td>
                   <td>$17/mo</td>
                   <td>$18/mo</td>
                   <td>$12/mo</td>
                   <td>$25/mo</td>
+                </tr>
+                <tr>
+                  <td>Requires Claude subscription</td>
+                  <td class="highlight"><span class="check">&#10003;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
+                  <td><span class="cross">&#10007;</span></td>
                 </tr>
               </tbody>
             </table>
@@ -489,37 +512,60 @@
       <section class="section" id="pricing">
         <div class="container">
           <div class="section-header">
-            <h2>Free While It's New</h2>
+            <h2>Simple Pricing</h2>
             <p>
-              Meeting AI Analyser is a young open-source project. Right now, every feature is completely free with no
-              limits. If the project grows and attracts a large community, a paid plan may be introduced in the future.
-              Early users get to enjoy the full experience at no cost.
+              Try free for 7 days with all features. Then pay once — no subscription, yours forever.
             </p>
           </div>
-          <div style="max-width: 560px; margin: 3rem auto 0">
-            <div class="pricing-card" style="border-color: #d97757; box-shadow: 0 8px 30px rgba(217, 119, 87, 0.12)">
-              <h3>Early Access</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 700px; margin: 3rem auto 0">
+            <div class="pricing-card">
+              <h3>Free Trial</h3>
               <div class="pricing-price">€0</div>
-              <div class="pricing-note">All features included — free while the project is new</div>
+              <div class="pricing-note">7 days, all features included</div>
               <ul class="pricing-features">
-                <li>Unlimited real-time transcription</li>
-                <li>Full Claude AI analysis</li>
-                <li>System audio + microphone capture</li>
-                <li>Works with all meeting software</li>
+                <li>Real-time transcription</li>
+                <li>Claude AI analysis</li>
+                <li>System audio + microphone</li>
                 <li>Local web dashboard</li>
-                <li>Action items & decisions extraction</li>
-                <li>Conversation memory - resume past sessions</li>
+                <li>Conversation memory</li>
               </ul>
               <a
                 href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
                 target="_blank"
                 rel="noopener"
+                class="btn btn-outline"
+                style="width: 100%; justify-content: center"
+                >Download Trial</a
+              >
+            </div>
+            <div class="pricing-card" style="border-color: #d97757; box-shadow: 0 8px 30px rgba(217, 119, 87, 0.12); position: relative">
+              <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #d97757; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase">Recommended</div>
+              <h3>Pro</h3>
+              <div class="pricing-price">€29</div>
+              <div class="pricing-note">One-time payment, yours forever</div>
+              <ul class="pricing-features">
+                <li>Everything in Trial</li>
+                <li>Unlimited usage</li>
+                <li>Activate on up to 3 machines</li>
+                <li>Free updates forever</li>
+              </ul>
+              <a
+                href="https://meetingai.lemonsqueezy.com/buy/862245"
+                target="_blank"
+                rel="noopener"
                 class="btn btn-primary"
                 style="width: 100%; justify-content: center"
-                >Download Free</a
+                >Buy Pro License</a
               >
             </div>
           </div>
+          <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted)">
+            <strong style="color: #d97757">Note:</strong> Meeting AI Analyser requires
+            <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>
+            and an active
+            <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude subscription</a>
+            (Pro, Team or Enterprise) — separate from the app license.
+          </p>
         </div>
       </section>
 
@@ -586,40 +632,32 @@
         <div class="container">
           <h2>Ready to Transform Your Meetings?</h2>
           <p>
-            Download Meeting AI Analyser for free and start getting structured summaries from your very next meeting.
+            Try Meeting AI Analyser free for 7 days, or buy Pro for unlimited access.
           </p>
-          <a
-            href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary btn-lg"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-            Download Free for Windows
-          </a>
-          <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.5">
-            Windows 10 & 11 - Requires
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap">
             <a
-              href="https://claude.ai/download"
+              href="https://meetingai.lemonsqueezy.com/buy/862245"
               target="_blank"
               rel="noopener"
-              style="color: inherit; text-decoration: underline"
-              >Claude Desktop</a
+              class="btn btn-primary btn-lg"
             >
-            (free) - ~130 MB
+              Buy Pro — €29
+            </a>
+            <a
+              href="https://github.com/nikoazax2/meeting-ai-analyser/releases"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline btn-lg"
+            >
+              Free Trial (7 days)
+            </a>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.5">
+            Windows 10 & 11 — Requires
+            <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline">Claude Code CLI</a>
+            +
+            <a href="https://claude.ai/pricing" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline">Claude subscription</a>
+            (Pro/Team/Enterprise)
           </p>
         </div>
       </section>
