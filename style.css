@@ -68,6 +68,9 @@ a:hover{color:#c0623f}
 .feature-icon svg{width:1.5rem;height:1.5rem;color:#d97757}
 .feature-card h3{font-size:1.15rem;margin-bottom:.5rem;color:#1a1a2e}
 .feature-card p{color:#666;font-size:.95rem}
+.feature-card.featured-new{position:relative;border-color:#d97757;box-shadow:0 4px 20px rgba(217,119,87,.1)}
+.feature-card.featured-new:hover{box-shadow:0 8px 30px rgba(217,119,87,.15)}
+.feature-card .new-badge{position:absolute;top:1rem;right:1rem;background:#d97757;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.2rem .6rem;border-radius:1rem}
 
 /* ===== How it Works ===== */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;counter-reset:step}
