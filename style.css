@@ -38,6 +38,7 @@ a:hover{color:#c0623f}
 .hero{padding:8rem 0 5rem;background:linear-gradient(180deg,#fff 40%,#fdf5f2 70%,#fff 100%)}
 .hero .container{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3rem}
 .hero-content{max-width:720px}
+.hero-eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:2px;font-size:.75rem;font-weight:700;color:#d97757;background:rgba(217,119,87,.1);padding:.35rem .85rem;border-radius:999px;margin-bottom:1.25rem}
 .hero-content h1{font-size:3rem;line-height:1.15;font-weight:800;color:#1a1a2e;margin-bottom:1rem}
 .hero-content h1 span{color:#d97757}
 .hero-content p{font-size:1.2rem;color:#555;margin-bottom:2rem;max-width:580px;margin-left:auto;margin-right:auto}
@@ -114,6 +115,17 @@ a:hover{color:#c0623f}
 .blog-card-body h3{font-size:1.05rem;margin-bottom:.5rem;line-height:1.4}
 .blog-card-body p{font-size:.9rem;color:#666;margin-bottom:1rem}
 .blog-card-body a{font-size:.9rem;font-weight:600}
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:2.5rem}
+.faq-item{background:#fff;border:1px solid #eee;border-radius:.75rem;padding:1rem 1.25rem;transition:box-shadow .2s,border-color .2s}
+.faq-item[open]{border-color:#d97757;box-shadow:0 4px 20px rgba(217,119,87,.08)}
+.faq-item summary{cursor:pointer;font-weight:600;color:#1a1a2e;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-weight:400;font-size:1.5rem;color:#d97757;transition:transform .2s;line-height:1}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{margin:1rem 0 .25rem;color:#555;line-height:1.65}
+.faq-item a{color:#d97757;text-decoration:underline}
 
 /* ===== CTA Section ===== */
 .cta-section{background:linear-gradient(135deg,#1a1a2e 0%,#2d2d44 100%);color:#fff;text-align:center;padding:5rem 0}

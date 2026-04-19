@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meeting AI Analyser - Real-Time Local Transcription & Claude AI Analysis</title>
+    <title>Meeting AI Analyser — Local AI Meeting Transcription & Claude Analysis for Windows</title>
     <script
       defer
       src="https://cloud.umami.is/script.js"
@@ -11,23 +11,19 @@
     ></script>
     <meta
       name="description"
-      content="Transcribe your meetings locally with Whisper and analyze them with Claude AI in real-time. No audio leaves your PC. Works with Teams, Zoom, Google Meet. Free download for Windows."
+      content="Local AI meeting transcription & analysis for Windows. Whisper transcribes on your PC, Claude AI summarises in real time. No bot, no cloud audio, no subscription. Free 7-day trial."
     />
-    <meta
-      name="keywords"
-      content="meeting transcription, AI meeting notes, local transcription, privacy meeting tool, real-time transcription, meeting summary"
-    />
-    <link rel="canonical" href="https://meetingaianalyser.com/" />
+    <link rel="canonical" href="https://www.meeting-ai-analyser.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Meeting AI Analyser - Real-Time Transcription & AI Analysis" />
+    <meta property="og:title" content="Meeting AI Analyser — Local AI Meeting Transcription & Claude Analysis" />
     <meta
       property="og:description"
-      content="Local transcription with Whisper + Claude AI analysis. No audio leaves your PC. Works with any meeting software. Free download."
+      content="Local Whisper transcription + Claude AI analysis. No audio leaves your PC. Works with Teams, Zoom, Google Meet. Free trial for Windows."
     />
-    <meta property="og:image" content="images/og-image.png" />
-    <meta property="og:url" content="https://meetingaianalyser.com/" />
+    <meta property="og:image" content="https://www.meeting-ai-analyser.com/images/og-image.png" />
+    <meta property="og:url" content="https://www.meeting-ai-analyser.com/" />
     <meta property="og:site_name" content="Meeting AI Analyser" />
 
     <!-- Twitter -->
@@ -83,6 +79,105 @@
         }
       }
     </script>
+
+    <!-- Schema.org FAQ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does my meeting audio ever leave my PC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Transcription runs locally using OpenAI's Whisper model. Audio is processed in memory on your machine and never uploaded. Only the resulting text transcript is sent to Claude AI for analysis, and this step can be disabled for fully offline use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which meeting tools does Meeting AI Analyser work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It works with anything playing audio on your PC: Microsoft Teams, Zoom, Google Meet, Webex, Discord, Slack huddles, browser tabs, and in-person meetings. There is no integration to set up; the app captures system audio via the Windows WASAPI stack."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a bot join my call?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Unlike Fireflies, Otter Assistant, or tl;dv, nothing joins your meeting. Capture happens locally on your own machine, so other participants never see a bot or recorder."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a Claude subscription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, for the AI analysis feature. Meeting AI Analyser uses the Claude Code CLI with your existing Claude Pro, Team, or Enterprise plan. Analysis cost is covered by your Claude subscription — no per-minute fees. Transcription alone works without it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is this different from Otter.ai, Fireflies, or Tactiq?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transcription is local (cloud tools upload your audio), pricing is a one-time €29 purchase instead of a monthly subscription, and no bot participates in your meeting."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the system requirements?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Windows 10 or Windows 11, roughly 4 GB of RAM free for Whisper, a modern multi-core CPU. A GPU is optional but accelerates larger Whisper models. Claude Code CLI and an active Claude subscription are required for AI analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Meeting AI Analyser cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Free 7-day trial with every feature unlocked. Then a single one-time €29 payment for a Pro license valid on up to 3 machines, with free updates forever. No subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Meeting AI Analyser open source?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The code is available on GitHub so you can audit how your audio and transcripts are handled."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Meeting AI Analyser",
+        "url": "https://www.meeting-ai-analyser.com/",
+        "logo": "https://www.meeting-ai-analyser.com/images/logo-full-transparant.png",
+        "founder": "SAGE Nicolas",
+        "sameAs": [
+          "https://github.com/nikoazax2/meeting-ai-analyser"
+        ]
+      }
+    </script>
+
+    <!-- Schema.org WebSite + SearchAction -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Meeting AI Analyser",
+        "url": "https://www.meeting-ai-analyser.com/"
+      }
+    </script>
   </head>
   <body>
     <!-- ===== Nav ===== -->
@@ -105,6 +200,7 @@
           <li><a href="#comparison">Compare</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li>
             <a
               href="https://github.com/nikoazax2/meeting-ai-landing/releases/latest/download/MeetingAIAnalyser.exe"
@@ -121,7 +217,8 @@
       <section class="hero" id="hero">
         <div class="container">
           <div class="hero-content">
-            <h1>Be the best dev in the room. <span>AI-Powered Meeting Analysis</span>, Local Transcription</h1>
+            <p class="hero-eyebrow">Be the best dev in the room</p>
+            <h1>AI Meeting Transcription & <span>Claude AI Analysis</span> — 100% Local, for Windows</h1>
             <p>
               Real-time technical analysis of your meetings - capture decisions, action items, and key insights
               instantly. Local transcription with Whisper, smart analysis powered by Claude AI. No audio ever leaves
@@ -652,7 +749,85 @@
         </div>
       </section>
 
-      <!-- ===== 8. Download CTA ===== -->
+      <!-- ===== 8. FAQ ===== -->
+      <section class="section" id="faq">
+        <div class="container" style="max-width: 820px">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know before trying Meeting AI Analyser.</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Does my meeting audio ever leave my PC?</summary>
+              <p>
+                No. Transcription runs locally on your machine using OpenAI's Whisper model. Your audio stream is
+                processed in memory and never uploaded anywhere. Only the resulting text transcript is sent to Claude AI
+                (via the Claude Code CLI) for analysis — and you can disable this entirely for fully offline use.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Which meeting tools does Meeting AI Analyser work with?</summary>
+              <p>
+                It works with anything that plays audio on your PC: Microsoft Teams, Zoom, Google Meet, Webex, Discord,
+                Slack huddles, browser tabs, recorded videos, even in-person meetings captured by your microphone. There
+                is no integration to set up — the app captures system audio via the standard Windows audio stack
+                (WASAPI).
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Does a bot join my call?</summary>
+              <p>
+                No. Unlike Fireflies, Otter Assistant, or tl;dv, nothing joins your meeting. Capture happens locally on
+                your own machine, so other participants never see a bot or recorder in the call.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Do I need a Claude subscription?</summary>
+              <p>
+                Yes, for the AI analysis feature. Meeting AI Analyser uses the
+                <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>
+                with your existing
+                <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude Pro, Team, or Enterprise</a>
+                plan. That means analysis cost is already covered by your Claude subscription — no per-minute fees.
+                Transcription alone works without it.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How is this different from Otter.ai, Fireflies, or Tactiq?</summary>
+              <p>
+                Three core differences: (1) transcription is local — cloud tools upload your audio; (2) it's a one-time
+                €29 purchase instead of a monthly subscription; (3) no bot participates in your meeting. See the
+                <a href="#comparison">full comparison table</a>.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>What are the system requirements?</summary>
+              <p>
+                Windows 10 or Windows 11, roughly 4&nbsp;GB of RAM free for the Whisper model (smaller models work on
+                lower-spec machines), and a modern multi-core CPU. A GPU is optional but accelerates larger Whisper
+                models. Claude Code CLI and an active Claude subscription are required for AI analysis.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How much does Meeting AI Analyser cost?</summary>
+              <p>
+                Free for 7 days with every feature unlocked. After that, a single one-time payment of €29 gives you a
+                Pro license for up to 3 machines, with free updates forever. No subscription.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Is Meeting AI Analyser open source?</summary>
+              <p>
+                Yes. The code is available on
+                <a href="https://github.com/nikoazax2/meeting-ai-analyser" target="_blank" rel="noopener">GitHub</a>
+                so you can audit exactly how your audio and transcripts are handled.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. Download CTA ===== -->
       <section class="cta-section" id="download">
         <div class="container">
           <h2>Ready to Transform Your Meetings?</h2>
