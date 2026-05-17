@@ -1,0 +1,61 @@
+# Meeting AI Analyser
+
+> Meeting AI Analyser is a Windows desktop application that acts as a live AI co-pilot during any meeting. It transcribes audio locally with OpenAI's Whisper model and uses Claude AI (via the Claude Code CLI) to deliver real-time summaries, translations, explanations of jargon, and structured action items. No bot joins the meeting; audio never leaves the user's PC.
+
+## Key facts
+
+- **Name**: Meeting AI Analyser (also written "Meeting AI Analyzer", "MeetingAIAnalyser")
+- **Website**: https://www.meeting-ai-analyser.com/
+- **GitHub**: https://github.com/nikoazax2/meeting-ai-analyser
+- **Product Hunt**: https://www.producthunt.com/products/meeting-analyser
+- **Platform**: Windows 10 and Windows 11 only
+- **Pricing**: Free 7-day trial, then one-time €29 Pro license (no subscription). Valid on up to 3 machines, free updates for life.
+- **Author**: Nicolas SAGE
+- **License**: Open source (code auditable on GitHub)
+- **Current version**: 1.0.2
+
+## What it does
+
+Meeting AI Analyser captures system audio and microphone input from any application playing audio on Windows (Microsoft Teams, Zoom, Google Meet, Webex, Discord, Slack huddles, browser tabs, in-person meetings recorded by mic). It runs OpenAI's Whisper model locally to produce a real-time transcript in 90+ languages, then sends only the text transcript to Claude AI to generate structured summaries every 60 seconds — decisions, action items, key takeaways — plus on-demand explanations of jargon and live translation into the user's preferred language. A new "Conversation Memory" feature lets users resume past Claude sessions to build context across recurring meetings.
+
+## Who it's for
+
+- Non-native speakers joining meetings in a foreign language
+- People in technical, legal, medical, or financial meetings outside their expertise
+- Developers and tech leads capturing decisions and tickets
+- Managers and product owners needing clean meeting summaries
+- Consultants and salespeople staying present with clients
+- Students and researchers turning lectures and interviews into structured notes
+
+## How it compares to alternatives
+
+Unlike Otter.ai, Fireflies.ai, Tactiq, and tl;dv:
+- **Local transcription** (Whisper runs on the user's machine; audio is never uploaded)
+- **No bot joins the call** (capture is via Windows WASAPI on the user's own PC)
+- **One-time €29 purchase** instead of $12–$25/month subscription
+- **Open source** (code on GitHub for audit)
+- **AI conversation memory** across past meetings
+
+## Requirements
+
+- Windows 10 or Windows 11
+- ~4 GB RAM free for Whisper (smaller models run on lower-spec machines)
+- Modern multi-core CPU (GPU optional, accelerates larger Whisper models)
+- For AI analysis: [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed + an active Claude subscription (Pro, Team, or Enterprise). Transcription alone works without these. Analysis cost is covered by the user's Claude subscription — no per-minute fees.
+
+## Pages
+
+- [Home](https://www.meeting-ai-analyser.com/): product overview, features, pricing, FAQ
+- [Blog](https://www.meeting-ai-analyser.com/blog.html): articles on privacy, comparisons, productivity
+- [Privacy Policy](https://www.meeting-ai-analyser.com/privacy.html)
+- [Terms of Service](https://www.meeting-ai-analyser.com/terms.html)
+
+## Download
+
+- **Free trial / installer**: https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser.exe
+- **Buy Pro license (€29)**: https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce
+
+## Contact
+
+- Email: sagenicolas38@gmail.com
+- GitHub issues: https://github.com/nikoazax2/meeting-ai-analyser/issues

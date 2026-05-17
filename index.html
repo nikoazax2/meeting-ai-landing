@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meeting AI Analyser - Live AI Co-Pilot for Any Meeting (Local & Private, Windows)</title>
+    <title>Meeting AI Analyser — Live AI Co-Pilot for Meetings on Windows (Local Whisper + Claude AI)</title>
     <script
       defer
       src="https://cloud.umami.is/script.js"
@@ -11,8 +11,9 @@
     ></script>
     <meta
       name="description"
-      content="Your live AI co-pilot for any meeting: technical discussions, foreign-language calls, complex topics. Whisper transcribes locally, Claude AI explains, translates and summarises in real time. No bot, no cloud audio. Free 7-day trial for Windows."
+      content="Meeting AI Analyser is a live AI co-pilot for Windows that transcribes, translates and explains any meeting in real time. Local Whisper transcription, Claude AI analysis, no bot in your call, no cloud audio. One-time €29 license, free 7-day trial."
     />
+    <meta name="keywords" content="Meeting AI Analyser, meeting AI, AI meeting assistant, live meeting transcription, Whisper transcription, Claude AI meetings, local meeting transcription, Teams transcription, Zoom transcription, real-time meeting translation, no-bot meeting assistant, Otter alternative, Fireflies alternative" />
     <link rel="canonical" href="https://www.meeting-ai-analyser.com/" />
 
     <!-- Open Graph -->
@@ -62,28 +63,59 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Meeting AI Analyser",
+        "alternateName": ["MeetingAIAnalyser", "Meeting AI Analyzer"],
+        "url": "https://www.meeting-ai-analyser.com/",
+        "image": "https://www.meeting-ai-analyser.com/images/software-screenshoot.png",
+        "screenshot": "https://www.meeting-ai-analyser.com/images/software-screenshoot.png",
         "operatingSystem": "Windows 10, Windows 11",
         "applicationCategory": "BusinessApplication",
-        "description": "Live AI co-pilot for meetings on Windows: real-time local Whisper transcription, multilingual translation, and Claude AI summaries, explanations and action items. Works with Teams, Zoom, Google Meet and any audio source.",
+        "applicationSubCategory": "Meeting Transcription Software",
+        "description": "Meeting AI Analyser is a live AI co-pilot for Windows meetings: real-time local Whisper transcription, multilingual translation, and Claude AI summaries, explanations and action items. Works with Teams, Zoom, Google Meet and any audio source. No bot joins the call, audio never leaves your PC.",
+        "featureList": [
+          "Real-time local Whisper transcription",
+          "Claude AI-powered summaries and analysis",
+          "Multilingual support (90+ languages)",
+          "Live translation",
+          "Captures system audio and microphone",
+          "Works with Teams, Zoom, Google Meet, Webex, Discord",
+          "No bot joins the call",
+          "Conversation memory across sessions",
+          "Open source"
+        ],
         "offers": [
           {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "EUR",
-            "name": "Free Trial (7 days)"
+            "name": "Free Trial (7 days)",
+            "availability": "https://schema.org/InStock",
+            "url": "https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser.exe"
           },
           {
             "@type": "Offer",
             "price": "29",
             "priceCurrency": "EUR",
-            "name": "Pro License"
+            "name": "Pro License",
+            "availability": "https://schema.org/InStock",
+            "url": "https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce"
           }
         ],
         "downloadUrl": "https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser.exe",
         "softwareVersion": "1.0.2",
         "author": {
+          "@type": "Person",
+          "name": "Nicolas SAGE",
+          "url": "https://github.com/nikoazax2"
+        },
+        "publisher": {
           "@type": "Organization",
-          "name": "SAGE Nicolas"
+          "name": "Meeting AI Analyser",
+          "url": "https://www.meeting-ai-analyser.com/",
+          "logo": "https://www.meeting-ai-analyser.com/images/logo-full-transparant.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Meeting AI Analyser"
         }
       }
     </script>
@@ -186,8 +218,16 @@
         "name": "Meeting AI Analyser",
         "url": "https://www.meeting-ai-analyser.com/",
         "logo": "https://www.meeting-ai-analyser.com/images/logo-full-transparant.png",
-        "founder": "SAGE Nicolas",
-        "sameAs": ["https://github.com/nikoazax2/meeting-ai-analyser"]
+        "description": "Meeting AI Analyser builds a privacy-first, local AI co-pilot for meetings on Windows, combining Whisper transcription and Claude AI analysis.",
+        "founder": {
+          "@type": "Person",
+          "name": "Nicolas SAGE"
+        },
+        "sameAs": [
+          "https://github.com/nikoazax2/meeting-ai-analyser",
+          "https://github.com/nikoazax2",
+          "https://www.producthunt.com/products/meeting-analyser"
+        ]
       }
     </script>
 
@@ -197,7 +237,53 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Meeting AI Analyser",
-        "url": "https://www.meeting-ai-analyser.com/"
+        "alternateName": "MeetingAIAnalyser",
+        "url": "https://www.meeting-ai-analyser.com/",
+        "description": "Official site of Meeting AI Analyser — the live AI co-pilot for Windows meetings: local Whisper transcription + Claude AI summaries, translations and explanations.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Meeting AI Analyser"
+        }
+      }
+    </script>
+
+    <!-- Schema.org Product (for Google Shopping / richer SERP) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Meeting AI Analyser",
+        "image": "https://www.meeting-ai-analyser.com/images/software-screenshoot.png",
+        "description": "Live AI co-pilot for Windows meetings. Local Whisper transcription, Claude AI summaries, real-time translation. Works with Teams, Zoom, Google Meet. No bot. One-time €29.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Meeting AI Analyser"
+        },
+        "category": "Software > Productivity > Meeting Assistant",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce",
+          "priceCurrency": "EUR",
+          "price": "29",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2027-12-31"
+        }
+      }
+    </script>
+
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.meeting-ai-analyser.com/"
+          }
+        ]
       }
     </script>
   </head>
@@ -240,8 +326,8 @@
       <section class="hero" id="hero">
         <div class="container">
           <div class="hero-content">
-            <p class="hero-eyebrow">Your live AI co-pilot, in every meeting</p>
-            <h1>Understand, follow and master <span>any meeting</span> with Claude AI by your side</h1>
+            <p class="hero-eyebrow">Meeting AI Analyser — your live AI co-pilot, in every meeting</p>
+            <h1>Meeting AI Analyser: understand, follow and master <span>any meeting</span> with Claude AI by your side</h1>
             <p>
               Technical jargon, a language you barely speak, a topic outside your expertise, a long brainstorm to
               summarise? Meeting AI Analyser listens with you and gives real-time transcription, translation,
@@ -355,10 +441,10 @@
       <section class="section section-alt" id="features">
         <div class="container">
           <div class="section-header">
-            <h2>One AI assistant, every kind of meeting</h2>
+            <h2>Meeting AI Analyser: one AI assistant, every kind of meeting</h2>
             <p>
-              Whatever the topic - technical, legal, financial, foreign-language - Claude listens along, decodes what's
-              being said and hands you the takeaways. Local Whisper transcription, AI-powered insights via Claude.
+              Whatever the topic - technical, legal, financial, foreign-language - Meeting AI Analyser listens along with Claude,
+              decodes what's being said and hands you the takeaways. Local Whisper transcription, AI-powered insights via Claude.
             </p>
           </div>
           <div class="features-grid">
