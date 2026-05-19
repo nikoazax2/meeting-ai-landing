@@ -7,7 +7,10 @@
 - **Name**: Meeting AI Analyser (also written "Meeting AI Analyzer", "MeetingAIAnalyser")
 - **Website**: https://www.meeting-ai-analyser.com/
 - **GitHub**: https://github.com/nikoazax2/meeting-ai-analyser
-- **Product Hunt**: https://www.producthunt.com/products/meeting-analyser
+- **Product Hunt**: https://www.producthunt.com/products/meeting-ai-analyser
+- **SaaSHub**: https://www.saashub.com/meeting-ai-analyser
+- **SourceForge**: https://sourceforge.net/projects/meeting-ai-analyser/
+- **Demo video**: https://www.youtube.com/watch?v=UkgPjo-8OP0
 - **Platform**: Windows 10 and Windows 11 only
 - **Pricing**: Free 7-day trial, then one-time €29 Pro license (no subscription). Valid on up to 3 machines, free updates for life.
 - **Author**: Nicolas SAGE

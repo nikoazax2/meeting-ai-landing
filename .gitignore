@@ -1,1 +1,18 @@
 downloads/*.exe
+
+# Build / session artifacts (do not commit to landing repo)
+*.exe
+*.mp4
+*.mp3
+*.zip
+*.yml.tmp
+.playwright-mcp/
+frames/
+callouts/
+concat.txt
+make_callouts.py
+submission-*.png
+ph-product.png
+saashub-*.png
+sf-*.png
+*.tmp.html
