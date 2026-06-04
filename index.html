@@ -155,10 +155,10 @@
           },
           {
             "@type": "Question",
-            "name": "Do I need a Claude subscription?",
+            "name": "Do I need a Claude subscription, or can I use an API key?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, for the AI analysis feature. Meeting AI Analyser uses the Claude Code CLI with your existing Claude Pro, Team, or Enterprise plan. Analysis cost is covered by your Claude subscription   no per-minute fees. Transcription alone works without it."
+              "text": "Either works. You can run AI analysis through the Claude Code CLI with your existing Claude Pro, Team, or Enterprise plan (cost covered by your subscription, no per-minute fees), or use your own Anthropic API key (pay-as-you-go, no subscription or CLI required). You choose the mode in the app settings. Transcription alone works without either."
             }
           },
           {
@@ -190,7 +190,7 @@
             "name": "What are the system requirements?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Windows 10 or Windows 11, roughly 4 GB of RAM free for Whisper, a modern multi-core CPU. A GPU is optional but accelerates larger Whisper models. Claude Code CLI and an active Claude subscription are required for AI analysis."
+              "text": "Windows 10 or Windows 11, roughly 4 GB of RAM free for Whisper, a modern multi-core CPU. A GPU is optional but accelerates larger Whisper models. AI analysis requires either a Claude subscription via the Claude Code CLI, or your own Anthropic API key (no subscription or CLI needed)."
             }
           },
           {
@@ -390,15 +390,7 @@
               </a>
             </div>
             <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7">
-              No credit card for trial. No bot in your call. Audio stays on your PC. Requires
-              <a
-                href="https://docs.anthropic.com/en/docs/claude-code"
-                target="_blank"
-                rel="noopener"
-                style="color: inherit; text-decoration: underline"
-                >Claude Code CLI</a
-              >
-              +
+              No credit card for trial. No bot in your call. Audio stays on your PC. AI analysis works with a
               <a
                 href="https://claude.ai/pricing"
                 target="_blank"
@@ -406,7 +398,21 @@
                 style="color: inherit; text-decoration: underline"
                 >Claude subscription</a
               >
-              (Pro/Team/Enterprise)
+              (via
+              <a
+                href="https://docs.anthropic.com/en/docs/claude-code"
+                target="_blank"
+                rel="noopener"
+                style="color: inherit; text-decoration: underline"
+                >Claude Code CLI</a
+              >) or your own
+              <a
+                href="https://console.anthropic.com/"
+                target="_blank"
+                rel="noopener"
+                style="color: inherit; text-decoration: underline"
+                >Anthropic API key</a
+              >.
             </p>
           </div>
           <div class="hero-visual">
@@ -495,7 +501,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="#d97757" stroke-width="2">
                 <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              For Claude Pro/Max users
+              Claude sub or API key
             </div>
           </div>
         </div>
@@ -709,15 +715,17 @@
           </div>
           <div class="steps">
             <div class="step">
-              <h3>Install Claude Code CLI</h3>
+              <h3>Connect Claude — subscription or API key</h3>
               <p>
-                Install
+                For AI analysis, pick whichever you prefer: either install the
                 <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener"
                   >Claude Code CLI</a
                 >
-                on your machine. You also need an active
+                with a
                 <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude subscription</a>
-                (Pro, Team or Enterprise). Meeting AI Analyser uses Claude to analyze your transcripts in real time.
+                (Pro, Team or Enterprise), or just paste your own
+                <a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic API key</a>
+                in the app settings - no CLI or subscription needed. Transcription alone works without either.
               </p>
             </div>
             <div class="step">
@@ -828,7 +836,7 @@
                   <td>$25/mo</td>
                 </tr>
                 <tr>
-                  <td>Requires Claude subscription</td>
+                  <td>Runs on your own Claude plan or API key</td>
                   <td class="highlight"><span class="check">&#10003;</span></td>
                   <td><span class="cross">&#10007;</span></td>
                   <td><span class="cross">&#10007;</span></td>
@@ -920,11 +928,11 @@
             </div>
           </div>
           <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted)">
-            <strong style="color: #d97757">Note:</strong> Meeting AI Analyser requires
-            <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>
-            and an active
+            <strong style="color: #d97757">Note:</strong> AI analysis needs either a
             <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude subscription</a>
-            (Pro, Team or Enterprise), separate from the app license.
+            (via <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>)
+            or your own <a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic API key</a>
+            (pay-as-you-go), separate from the app license. Transcription works without either.
           </p>
         </div>
       </section>
@@ -1019,16 +1027,18 @@
               </p>
             </details>
             <details class="faq-item">
-              <summary>Do I need a Claude subscription?</summary>
+              <summary>Do I need a Claude subscription, or can I use an API key?</summary>
               <p>
-                Yes, for the AI analysis feature. Meeting AI Analyser uses the
+                Either works. You can run AI analysis through the
                 <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener"
                   >Claude Code CLI</a
                 >
                 with your existing
                 <a href="https://claude.ai/pricing" target="_blank" rel="noopener">Claude Pro, Team, or Enterprise</a>
-                plan. That means analysis cost is already covered by your Claude subscription no per-minute fees.
-                Transcription alone works without it.
+                plan (analysis cost is covered by your subscription, no per-minute fees) - or paste your own
+                <a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic API key</a>
+                (pay-as-you-go, no subscription or CLI required). Pick the mode in the app settings. Transcription
+                alone works without either.
               </p>
             </details>
             <details class="faq-item">
@@ -1062,7 +1072,7 @@
               <p>
                 Windows 10 or Windows 11, roughly 4&nbsp;GB of RAM free for the Whisper model (smaller models work on
                 lower-spec machines), and a modern multi-core CPU. A GPU is optional but accelerates larger Whisper
-                models. Claude Code CLI and an active Claude subscription are required for AI analysis.
+                models. AI analysis needs either a Claude subscription (via the Claude Code CLI) or your own Anthropic API key - no subscription or CLI required.
               </p>
             </details>
             <details class="faq-item">
@@ -1109,15 +1119,7 @@
             </a>
           </div>
           <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7">
-            Windows 10 & 11, Requires
-            <a
-              href="https://docs.anthropic.com/en/docs/claude-code"
-              target="_blank"
-              rel="noopener"
-              style="color: inherit; text-decoration: underline"
-              >Claude Code CLI</a
-            >
-            +
+            Windows 10 & 11. AI analysis via a
             <a
               href="https://claude.ai/pricing"
               target="_blank"
@@ -1125,7 +1127,20 @@
               style="color: inherit; text-decoration: underline"
               >Claude subscription</a
             >
-            (Pro/Team/Enterprise)
+            (<a
+              href="https://docs.anthropic.com/en/docs/claude-code"
+              target="_blank"
+              rel="noopener"
+              style="color: inherit; text-decoration: underline"
+              >Claude Code CLI</a
+            >) or your own
+            <a
+              href="https://console.anthropic.com/"
+              target="_blank"
+              rel="noopener"
+              style="color: inherit; text-decoration: underline"
+              >Anthropic API key</a
+            >.
           </p>
         </div>
       </section>
