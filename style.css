@@ -5,6 +5,8 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#1a1a2e;backgr
 img{max-width:100%;height:auto;display:block}
 a{color:#d97757;text-decoration:none;transition:color .2s}
 a:hover{color:#c0623f}
+/* a11y: inline links in body text must not rely on color alone */
+.features-grid p a,.steps p a,.section-header p a,.cta-section p a,.hero-content>p a,#pricing p a{text-decoration:underline}
 
 /* ===== Utility ===== */
 .container{max-width:1120px;margin:0 auto;padding:0 1.5rem}

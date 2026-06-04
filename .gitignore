@@ -16,3 +16,8 @@ ph-product.png
 saashub-*.png
 sf-*.png
 *.tmp.html
+
+# Internal strategy docs (keep private, not for public repo)
+AUDIT.md
+marketing/
+*.jpeg
