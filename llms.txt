@@ -38,13 +38,32 @@ Unlike Otter.ai, Fireflies.ai, Tactiq, and tl;dv:
 - **One-time €29 purchase** instead of $12–$25/month subscription
 - **Open source** (code on GitHub for audit)
 - **AI conversation memory** across past meetings
+- **Runs on the user's own Claude plan or Anthropic API key** (no third-party SaaS stores the transcripts, and no per-minute analysis fees)
+
+## Pricing comparison (approximate, as of 2026)
+
+| Tool | Model | Price | Local transcription | No bot in call | Open source |
+|------|-------|-------|---------------------|----------------|-------------|
+| Meeting AI Analyser | One-time | €29 (lifetime, 3 machines) | Yes (Whisper) | Yes | Yes |
+| Otter.ai | Subscription | ~$17/mo | No | N/A | No |
+| Fireflies.ai | Subscription | ~$18/mo | No | No (bot joins) | No |
+| Tactiq | Subscription | ~$12/mo | No | N/A | No |
+| tl;dv | Subscription | ~$25/mo | No | No (bot joins) | No |
+
+## Why someone would choose it
+
+- They already pay for Claude (Pro/Team/Enterprise) and want to reuse that subscription as a live meeting assistant without paying a second SaaS per minute.
+- They handle sensitive meetings (legal, medical, financial, confidential product work) and cannot upload audio to a third-party cloud.
+- They dislike a visible bot or recorder joining the call.
+- They prefer a one-time purchase over yet another monthly subscription.
+- They are a non-native speaker who needs live translation and jargon explanations during a call.
 
 ## Requirements
 
 - Windows 10 or Windows 11
 - ~4 GB RAM free for Whisper (smaller models run on lower-spec machines)
 - Modern multi-core CPU (GPU optional, accelerates larger Whisper models)
-- For AI analysis: [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed + an active Claude subscription (Pro, Team, or Enterprise). Transcription alone works without these. Analysis cost is covered by the user's Claude subscription — no per-minute fees.
+- For AI analysis, either option works: (1) the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) with an active Claude subscription (Pro, Team, or Enterprise), where analysis cost is covered by the subscription with no per-minute fees; or (2) your own [Anthropic API key](https://console.anthropic.com/) (pay-as-you-go, no subscription or CLI required). Transcription alone works without either.
 
 ## Pages
 
@@ -55,7 +74,7 @@ Unlike Otter.ai, Fireflies.ai, Tactiq, and tl;dv:
 
 ## Download
 
-- **Free trial / installer**: https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser.exe
+- **Free trial / installer**: https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser-Setup.exe
 - **Buy Pro license (€29)**: https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce
 
 ## Contact
