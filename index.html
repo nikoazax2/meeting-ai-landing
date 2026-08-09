@@ -1199,5 +1199,41 @@
         });
       });
     </script>
+    <script>
+      /* First-touch source attribution: carry the traffic source into the Lemon Squeezy checkout
+         so each order records where the buyer actually came from (google, chatgpt, reddit, direct...). */
+      (function () {
+        try {
+          var KEY = "maa_src";
+          var params = new URLSearchParams(location.search);
+          var stored = localStorage.getItem(KEY);
+          if (!stored) {
+            var src = params.get("utm_source");
+            if (!src) {
+              if (document.referrer) {
+                try {
+                  src = new URL(document.referrer).hostname.replace(/^www\./, "");
+                } catch (e) {
+                  src = "referral";
+                }
+              } else {
+                src = "direct";
+              }
+            }
+            stored = src;
+            localStorage.setItem(KEY, stored);
+          }
+          document.querySelectorAll('a[href*="lemonsqueezy.com/checkout"]').forEach(function (a) {
+            var u = new URL(a.href);
+            if (!u.searchParams.has("utm_source")) {
+              u.searchParams.set("utm_source", stored);
+              u.searchParams.set("utm_medium", stored === "direct" ? "direct" : "referral");
+              u.searchParams.set("utm_campaign", "landing");
+              a.href = u.toString();
+            }
+          });
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>

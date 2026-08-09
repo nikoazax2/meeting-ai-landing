@@ -78,6 +78,18 @@
           "description": "Practical tips for turning Claude AI meeting summaries into real productivity gains: prompting, structure, follow-through.",
           "publisher": { "@type": "Organization", "name": "Meeting AI Analyser" },
           "mainEntityOfPage": "https://www.meeting-ai-analyser.com/blog.html#article-3"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "How to use your Claude subscription as a live meeting assistant (no per-minute fees)",
+          "url": "https://www.meeting-ai-analyser.com/blog.html#article-4",
+          "datePublished": "2026-08-09",
+          "dateModified": "2026-08-09",
+          "author": { "@type": "Person", "name": "Nicolas SAGE" },
+          "image": "https://www.meeting-ai-analyser.com/images/software-screenshoot.png",
+          "description": "You already pay for Claude. Here is how to turn that subscription (or an Anthropic API key) into a real-time meeting co-pilot on Windows, with no bot and no cloud audio.",
+          "publisher": { "@type": "Organization", "name": "Meeting AI Analyser" },
+          "mainEntityOfPage": "https://www.meeting-ai-analyser.com/blog.html#article-4"
         }
       ]
     }
@@ -221,13 +233,47 @@
         </div>
       </section>
 
+      <section class="section section-alt" id="article-4">
+        <div class="container" style="max-width:780px">
+          <article>
+            <div class="tag" style="display:inline-block;background:rgba(217,119,87,.1);color:#d97757;padding:.25rem .75rem;border-radius:1rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem">Claude</div>
+            <h2 style="font-size:2.25rem;line-height:1.2;margin-bottom:.5rem">How to use your Claude subscription as a live meeting assistant</h2>
+            <p style="color:#888;font-size:.9rem;margin-bottom:2rem">Published 9 Aug 2026 · 6 min read</p>
+
+            <p>If you already pay for Claude Pro, Team or Enterprise, you are sitting on an underused asset: a top-tier model you could be running live during every meeting, for no extra per-minute cost. Most meeting tools ignore this and bill you a second subscription to use <em>their</em> AI on <em>their</em> cloud. Here is how to turn the Claude plan you already have (or a pay-as-you-go Anthropic API key) into a real-time meeting co-pilot on Windows.</p>
+
+            <h3 style="margin-top:2rem">Why route meetings through your own Claude, not another SaaS</h3>
+            <p>Cloud meeting tools charge $12 to $25 per user per month, and the AI summary is generated on their servers from audio you uploaded. Running the analysis through your own Claude account flips both problems: the transcript is processed under your Anthropic account (not a third party's), and the cost is whatever your subscription already covers, with no per-minute markup. You are not renting an AI you already pay for.</p>
+
+            <h3 style="margin-top:2rem">Two ways to connect: subscription or API key</h3>
+            <p>There are two supported modes, and you pick whichever fits:</p>
+            <ul style="margin-left:1.5rem;line-height:1.9">
+              <li><strong>Claude subscription via the <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code CLI</a>:</strong> install the CLI, sign in with your Pro/Team/Enterprise plan, and the app uses it for analysis. Cost is covered by your subscription, no per-minute fees.</li>
+              <li><strong>Your own <a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic API key</a>:</strong> paste a key in the app settings, pay-as-you-go, no CLI or subscription required. Ideal if you would rather pay per token than hold a subscription.</li>
+            </ul>
+            <p>Transcription runs locally with Whisper either way, so it works even before you connect any AI at all.</p>
+
+            <h3 style="margin-top:2rem">The setup, end to end</h3>
+            <p>Download <a href="index.html">Meeting AI Analyser</a>, install it, and choose your mode in settings. Launch it, then open Teams, Zoom, Meet, Webex or any app playing audio. The app captures system audio via WASAPI, transcribes locally with Whisper, and streams only the text transcript to Claude for a structured summary every 60 seconds. No bot joins the call, and the audio never leaves your PC.</p>
+
+            <h3 style="margin-top:2rem">What you get during the call</h3>
+            <p>Live transcription in 90+ languages, on-demand translation into your language, jargon explanations when someone drops an acronym, and rolling summaries with decisions, action items and owners. Because it is your own Claude, you can steer it with a one-line instruction ("track objections and pricing" for sales, "capture RFC numbers and decisions" for engineering).</p>
+
+            <h3 style="margin-top:2rem">Is it worth it if you only have the API key?</h3>
+            <p>Yes. A one-hour meeting transcript is a few thousand tokens of text (not audio), so a typical meeting costs a few cents of API usage. Compared to a $17 to $25 monthly SaaS subscription, pay-as-you-go on your own key is dramatically cheaper for anyone who does not meet all day.</p>
+
+            <p style="margin-top:2rem"><a href="index.html#pricing" class="btn btn-primary">Try Meeting AI Analyser free for 7 days &rarr;</a></p>
+          </article>
+        </div>
+      </section>
+
       <section class="cta-section" id="download">
         <div class="container">
           <h2>Ready to retire your meeting bot?</h2>
           <p>7-day free trial. €29 one-time. Local audio, Claude AI brain.</p>
           <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-            <a href="https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Get Pro - €29 one-time</a>
-            <a href="https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser-Setup.exe" class="btn btn-outline btn-lg">Start Free 7-Day Trial</a>
+            <a href="https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce" target="_blank" rel="noopener" data-umami-event="buy-click" data-umami-event-location="blog-cta" class="btn btn-primary btn-lg">Get Pro - €29 one-time</a>
+            <a href="https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser-Setup.exe" data-umami-event="download-click" data-umami-event-location="blog-cta" class="btn btn-outline btn-lg">Start Free 7-Day Trial</a>
           </div>
         </div>
       </section>
@@ -245,5 +291,40 @@
         </ul>
       </div>
     </footer>
+    <script>
+      /* First-touch source attribution: carry the traffic source into the Lemon Squeezy checkout. */
+      (function () {
+        try {
+          var KEY = "maa_src";
+          var params = new URLSearchParams(location.search);
+          var stored = localStorage.getItem(KEY);
+          if (!stored) {
+            var src = params.get("utm_source");
+            if (!src) {
+              if (document.referrer) {
+                try {
+                  src = new URL(document.referrer).hostname.replace(/^www\./, "");
+                } catch (e) {
+                  src = "referral";
+                }
+              } else {
+                src = "direct";
+              }
+            }
+            stored = src;
+            localStorage.setItem(KEY, stored);
+          }
+          document.querySelectorAll('a[href*="lemonsqueezy.com/checkout"]').forEach(function (a) {
+            var u = new URL(a.href);
+            if (!u.searchParams.has("utm_source")) {
+              u.searchParams.set("utm_source", stored);
+              u.searchParams.set("utm_medium", stored === "direct" ? "direct" : "referral");
+              u.searchParams.set("utm_campaign", "landing");
+              a.href = u.toString();
+            }
+          });
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>
