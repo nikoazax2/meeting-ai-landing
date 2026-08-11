@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Meeting AI Analyser | Privacy, Local Whisper Transcription & Claude AI Meeting Notes</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="29759552-e590-4970-b2e8-724efbdefb83"></script>
-    <meta name="description" content="Articles on local meeting transcription, Whisper + Claude AI, privacy-first meeting tools, and how to replace Otter.ai or Fireflies with a no-bot Windows alternative." />
-    <meta name="keywords" content="local meeting transcription, Whisper meeting transcription, Claude AI meeting notes, Otter.ai alternative, Fireflies alternative, meeting AI without bot, privacy meeting transcription, Windows meeting assistant" />
+    <meta name="description" content="Articles on local meeting transcription, Whisper + Claude AI, privacy-first meeting tools, what to do when Microsoft Teams blocks AI notetaker bots, and how to replace Otter.ai or Fireflies with a no-bot Windows alternative." />
+    <meta name="keywords" content="local meeting transcription, Whisper meeting transcription, Claude AI meeting notes, Otter.ai alternative, Fireflies alternative, meeting AI without bot, privacy meeting transcription, Windows meeting assistant, AI notetaker blocked Teams, bot-free AI notetaker, Teams external bot policy, ExternalBotAccessMode, AI notetaker stuck in lobby, meeting notes without a bot" />
     <link rel="canonical" href="https://www.meeting-ai-analyser.com/blog.html" />
 
     <meta property="og:type" content="website" />
@@ -43,6 +43,18 @@
         "logo": { "@type": "ImageObject", "url": "https://www.meeting-ai-analyser.com/images/logo-full-transparant.png" }
       },
       "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Microsoft Teams is blocking AI notetaker bots: how to still get meeting notes in 2026",
+          "url": "https://www.meeting-ai-analyser.com/blog.html#article-5",
+          "datePublished": "2026-08-11",
+          "dateModified": "2026-08-11",
+          "author": { "@type": "Person", "name": "Nicolas SAGE" },
+          "image": "https://www.meeting-ai-analyser.com/images/software-screenshoot.png",
+          "description": "Teams now detects external AI notetaker bots, holds them in the lobby and, from August 2026, can block them outright. Here is what changed, why bot-free does not mean private, and how to keep getting meeting notes.",
+          "publisher": { "@type": "Organization", "name": "Meeting AI Analyser" },
+          "mainEntityOfPage": "https://www.meeting-ai-analyser.com/blog.html#article-5"
+        },
         {
           "@type": "BlogPosting",
           "headline": "Why Local Meeting Transcription Matters for Privacy in 2026",
@@ -105,6 +117,63 @@
       ]
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my AI notetaker stuck in the Microsoft Teams lobby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI notetaker gets stuck in the Microsoft Teams lobby because Teams now classifies external third-party meeting bots as a distinct participant type and screens them on join. Detected bots are labelled unverified, land in a lobby group flagged as suspected threats, and the meeting organiser must admit them explicitly — there is deliberately no one-click admit for them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What exactly did Microsoft change in Teams in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Microsoft added a Teams meeting policy called 'Manage external bots and their access to meetings', exposed as the ExternalBotAccessMode attribute of Set-CsTeamsMeetingPolicy, with three values: AllowAllBots, RequireApprovalWhenDetected (the current default) and BlockDetectedBots. It was announced on 13 March 2026 in Message Center notice MC1251206, reached Targeted Release in mid-May 2026, became generally available in early-to-mid June 2026, and BlockDetectedBots began rolling out in August 2026 (roadmap 566201). It does not affect Microsoft 365 Copilot or bots registered as Entra ID applications inside your own tenant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does bot-free also mean my meeting audio stays private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. 'Bot-free' describes only how audio is captured — from your device rather than by a guest participant — and says nothing about where it is transcribed. Several bot-free tools capture locally and then stream the audio to cloud transcription providers; Granola, for example, passes audio to subprocessors such as AssemblyAI and Deepgram. Only a tool that runs the speech-to-text model on your own machine, such as Meeting AI Analyser with local Whisper, keeps the audio on the device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which meeting note tools do not send a bot into the call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tools that do not send a bot into the call fall into three groups: local-first desktop capture (Meeting AI Analyser, which transcribes on your PC with Whisper), cloud-backed desktop capture (Granola, and Fathom's beta bot-free mode on Mac), and browser extensions reading native captions (Tactiq, Google Meet only). Otter.ai, Fireflies.ai and tl;dv all join as visible bots and are therefore subject to the Teams block."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will IT block a desktop capture app as well?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Teams external bot policy does not apply to a desktop capture app, because ExternalBotAccessMode screens participants joining a meeting and a local recorder never joins. Endpoint policy, software allowlisting and your organisation's recording rules still apply. A local, open-source tool is usually an easier security review because the only data leaving the machine is the text transcript, or nothing at all when AI analysis is disabled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I still have to tell participants that I am transcribing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Removing the bot removes a technical disclosure, not a legal one. Consent rules follow the participants' location: over a dozen US states, including California, Florida and Pennsylvania, require all-party consent. In the EU a meeting transcript is personal data under GDPR, and from 2 August 2026 Article 50 of the AI Act adds transparency obligations on deployers. Local transcription reduces the compliance surface — no international transfer, no extra sub-processor — but it does not remove the duty to disclose."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -137,7 +206,127 @@
         </div>
       </section>
 
-      <section class="section" id="article-1" style="padding-top:1rem">
+      <section class="section section-alt" id="article-5" style="padding-top:1rem">
+        <div class="container" style="max-width:780px">
+          <article>
+            <div class="tag" style="display:inline-block;background:rgba(217,119,87,.1);color:#d97757;padding:.25rem .75rem;border-radius:1rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem">Guide</div>
+            <h2 style="font-size:2.25rem;line-height:1.2;margin-bottom:.5rem">Microsoft Teams is blocking AI notetaker bots: how to still get meeting notes in 2026</h2>
+            <p style="color:#888;font-size:.9rem;margin-bottom:2rem">Published 11 Aug 2026 · 7 min read</p>
+
+            <p>If your AI notetaker has stopped showing up in Microsoft Teams meetings, it is probably not broken — it is being detected and held in the lobby. Since a change Microsoft announced in March 2026 (Message Center notice MC1251206), Teams identifies external third-party meeting bots, flags them as unverified, and requires the organiser to admit them explicitly. From August 2026, administrators can switch a tenant-wide policy to block detected bots outright. The durable fix is not a different bot: it is a tool that captures the audio on your own machine and never joins the call as a participant.</p>
+
+            <h3 style="margin-top:2rem">Why is my AI notetaker stuck in the Microsoft Teams lobby?</h3>
+            <p>An AI notetaker gets stuck in the Microsoft Teams lobby because Teams now classifies external third-party meeting bots as a distinct participant type and screens them on join. Microsoft's stated reasoning is blunt: bots may access meetings "without the knowledge or consent of the meeting organizer or the hosting tenant." Detected bots land in a lobby group labelled as suspected threats, and there is deliberately no one-click admit for them.</p>
+            <p>Practically, that means your Otter Assistant, Fireflies "Fred" or tl;dv recorder now depends on a human noticing a prompt and approving it, every single meeting. If the organiser is not you, you have no control over that at all.</p>
+
+            <h3 style="margin-top:2rem">What exactly did Microsoft change in Teams in 2026?</h3>
+            <p>Microsoft added a Teams meeting policy called "Manage external bots and their access to meetings", exposed in the Teams Admin Center and via the <code>ExternalBotAccessMode</code> attribute of <code>Set-CsTeamsMeetingPolicy</code>. It has three values: <code>AllowAllBots</code> (no detection), <code>RequireApprovalWhenDetected</code> (lobby approval — the current default), and <code>BlockDetectedBots</code> (refused at the door). The dates, per Microsoft's own communications and roadmap entry 566201:</p>
+            <ul style="margin-left:1.5rem;line-height:1.9">
+              <li><strong>13 March 2026</strong> — announced in Message Center notice MC1251206.</li>
+              <li><strong>Mid-May 2026</strong> — Targeted Release: bots labelled and routed to the lobby.</li>
+              <li><strong>Early-to-mid June 2026</strong> — general availability of lobby approval as the default.</li>
+              <li><strong>August 2026</strong> — <code>BlockDetectedBots</code> begins rolling out across desktop, web, Mac, iOS and Android, for worldwide and GCC tenants.</li>
+            </ul>
+            <p>Two exclusions matter: the policy targets <em>external</em> third-party bots, so it does not block Microsoft 365 Copilot, and it excludes bots registered as Entra ID applications inside your own tenant. The older CAPTCHA verification policy is being retired in favour of this framework. So this is not a temporary glitch to wait out — it is the new default posture, and it only gets stricter.</p>
+
+            <h3 style="margin-top:2rem">Are Zoom and Google Meet blocking notetaker bots too?</h3>
+            <p>Zoom and Google Meet have moved in the same direction, though less aggressively than Teams. Zoom updated its settings back in October 2024 to let organisations block third-party AI bot domains from joining meetings, and Zoom's own AI Companion requires host initiation with a visible indicator. Google Meet in 2026 flags third-party notetaker bots as a potential risk and routes higher-risk join requests into a separate screening queue, while Workspace admins can restrict OAuth-connected notetakers outright.</p>
+            <p>The direction of travel is consistent across all three platforms: a recorder that joins as a guest is now treated as an unknown third party by default. Part of the pressure is legal — the consolidated class action <em>In re Otter.AI Privacy Litigation</em> (case 5:25-cv-06911, Northern District of California) had a motion-to-dismiss hearing on 20 May 2026, with plaintiffs arguing that a bot's consent model fails in all-party consent states.</p>
+
+            <h3 style="margin-top:2rem">Does "bot-free" also mean my meeting audio stays private?</h3>
+            <p>No — and this is the distinction most "best bot-free notetaker" listicles quietly skip. "Bot-free" describes only <em>how the audio is captured</em>: from your device instead of a guest participant. It says nothing about <em>where the audio is transcribed</em>. Several popular bot-free tools capture locally and then stream that audio straight to a cloud transcription provider.</p>
+            <p>Granola is the clearest example: it runs on your computer and listens to microphone and system audio, then passes that audio to cloud transcription subprocessors (AssemblyAI and Deepgram are listed) while the meeting is happening. The audio is deleted after transcription and the notes sit in a US-hosted AWS VPC — reasonable engineering, and Granola is SOC 2 Type 2 certified. But if the reason your IT team blocked bots was "meeting content must not reach a third party", a bot-free cloud tool does not actually solve their problem. It just makes the violation invisible.</p>
+            <p>If that distinction matters to you, the question to ask a vendor is not "do you send a bot?" but "does the audio leave my machine, and does the transcript leave my tenant?"</p>
+
+            <h3 style="margin-top:2rem">Which meeting note tools do not send a bot into the call?</h3>
+            <p>Tools that do not send a bot into the call fall into three groups: local-first desktop capture, cloud-backed desktop capture, and browser extensions that read native captions. The table below separates the two things that get conflated — bot presence and audio destination. Prices are approximate, as of August 2026.</p>
+            <div style="overflow-x:auto;margin:1.5rem 0">
+              <table style="width:100%;border-collapse:collapse;font-size:.95rem">
+                <thead>
+                  <tr style="text-align:left;border-bottom:2px solid rgba(136,136,136,.35)">
+                    <th style="padding:.6rem .5rem">Tool</th>
+                    <th style="padding:.6rem .5rem">Joins as a bot?</th>
+                    <th style="padding:.6rem .5rem">Where audio is transcribed</th>
+                    <th style="padding:.6rem .5rem">Survives <code>BlockDetectedBots</code></th>
+                    <th style="padding:.6rem .5rem">Price model</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem"><strong>Meeting AI Analyser</strong></td>
+                    <td style="padding:.6rem .5rem">No</td>
+                    <td style="padding:.6rem .5rem">On your PC (Whisper, local)</td>
+                    <td style="padding:.6rem .5rem">Yes</td>
+                    <td style="padding:.6rem .5rem">€29 one-time</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem">Otter.ai</td>
+                    <td style="padding:.6rem .5rem">Yes (Otter Assistant)</td>
+                    <td style="padding:.6rem .5rem">Otter cloud</td>
+                    <td style="padding:.6rem .5rem">No</td>
+                    <td style="padding:.6rem .5rem">~$17/user/mo</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem">Fireflies.ai</td>
+                    <td style="padding:.6rem .5rem">Yes ("Fred")</td>
+                    <td style="padding:.6rem .5rem">Fireflies cloud</td>
+                    <td style="padding:.6rem .5rem">No</td>
+                    <td style="padding:.6rem .5rem">~$18/user/mo</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem">tl;dv</td>
+                    <td style="padding:.6rem .5rem">Yes</td>
+                    <td style="padding:.6rem .5rem">tl;dv cloud</td>
+                    <td style="padding:.6rem .5rem">No</td>
+                    <td style="padding:.6rem .5rem">~$25/user/mo</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem">Fathom</td>
+                    <td style="padding:.6rem .5rem">Yes by default; bot-free desktop capture in beta (Mac)</td>
+                    <td style="padding:.6rem .5rem">Fathom cloud</td>
+                    <td style="padding:.6rem .5rem">Only in the bot-free mode</td>
+                    <td style="padding:.6rem .5rem">Free tier / ~$20/user/mo</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(136,136,136,.2)">
+                    <td style="padding:.6rem .5rem">Granola</td>
+                    <td style="padding:.6rem .5rem">No</td>
+                    <td style="padding:.6rem .5rem">Cloud subprocessors (AssemblyAI, Deepgram)</td>
+                    <td style="padding:.6rem .5rem">Yes</td>
+                    <td style="padding:.6rem .5rem">Subscription</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:.6rem .5rem">Tactiq</td>
+                    <td style="padding:.6rem .5rem">No (Chrome extension)</td>
+                    <td style="padding:.6rem .5rem">Tactiq cloud</td>
+                    <td style="padding:.6rem .5rem">Yes</td>
+                    <td style="padding:.6rem .5rem">~$12/user/mo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Only the first row keeps the audio on the machine. <a href="index.html">Meeting AI Analyser</a> captures system audio and microphone through the Windows WASAPI stack, transcribes locally with Whisper in 90+ languages, and sends only the resulting <em>text</em> to Claude for summaries, translation and action items — through your own Claude plan or Anthropic API key. Nothing joins the meeting, so there is no bot for Teams to detect, label or block. For the full feature-by-feature view, see the <a href="index.html#comparison">comparison on the homepage</a>.</p>
+
+            <h3 style="margin-top:2rem">Will IT block a desktop capture app as well?</h3>
+            <p>A desktop capture app is governed by a different control than a meeting bot, so the Teams policy does not apply to it — but that is not the same as blanket approval. <code>ExternalBotAccessMode</code> operates on participants joining a meeting; an application recording your own machine's audio output never joins, so there is nothing for Teams to screen. Endpoint policy, software allowlisting and your organisation's recording rules still apply, and they should.</p>
+            <p>The honest framing for a conversation with IT is this: the tool removes the third-party data flow they were worried about, and it removes the undisclosed participant. It does not remove your obligation to follow the recording policy. Being able to point at open source code on GitHub and say "here is exactly what leaves the machine — the text transcript, to an Anthropic endpoint we already have a contract with, or nothing at all if AI analysis is off" is a much shorter security review than defending a SaaS recorder.</p>
+
+            <h3 style="margin-top:2rem">Do I still have to tell participants that I am transcribing?</h3>
+            <p>Yes. Removing the bot removes a technical disclosure, not a legal one. Consent rules follow the participants' location, not the architecture of your tool: over a dozen US states, including California, Florida and Pennsylvania, require all-party consent, and the safest practice in a mixed-location call is to apply the strictest rule. In the EU, a meeting transcript is personal data of every participant under GDPR, and from 2 August 2026 Article 50 of the AI Act adds transparency obligations on deployers of AI systems, with worker monitoring treated as high-risk under Annex III.</p>
+            <p>What local transcription genuinely changes is the compliance <em>surface</em>: no international transfer to assess, no additional sub-processor to document, no third-party retention period to audit. We wrote about that in more detail in <a href="blog.html#article-1">why local meeting transcription matters for privacy in 2026</a>. Say out loud that you are taking AI-assisted notes. It costs you one sentence.</p>
+
+            <h3 style="margin-top:2rem">What does this cost compared to a per-seat subscription?</h3>
+            <p>Switching away from bot-based notetakers is usually cheaper, not more expensive. Cloud meeting assistants bill roughly $12 to $25 per user per month, indefinitely, and the AI analysis is metered on their side. Meeting AI Analyser is a one-time €29 Pro license valid on up to 3 machines with free updates for life, after a 7-day free trial. The AI side runs on the Claude subscription or Anthropic API key you already control, so there is no per-minute analysis fee — the mechanics of that are covered in <a href="blog.html#article-4">how to use your Claude subscription as a live meeting assistant</a>.</p>
+
+            <h3 style="margin-top:2rem">The trade-off, honestly</h3>
+            <p>Local transcription is not free of downsides. Whisper needs roughly 4 GB of free RAM and a modern multi-core CPU, and a GPU helps if you want the larger models; a cloud service offloads all of that. Meeting AI Analyser is Windows 10 and 11 only, so Mac and Linux users are out. There is no shared web inbox of past meetings for your whole team to browse, no CRM auto-sync, and setup asks a little more of you than clicking "connect calendar" — you pick a mode and, for the AI features, install the Claude Code CLI or paste an API key.</p>
+            <p>What you get in exchange is a tool that cannot be blocked in the lobby, cannot be labelled a suspected threat, does not appear in anyone's participant list, does not put your meeting audio on someone else's infrastructure, and does not add a monthly line item. If the reason you are reading this is that Teams stopped admitting your notetaker, that set of properties is the actual fix.</p>
+
+            <p style="margin-top:2rem"><a href="index.html#pricing" class="btn btn-primary">Try Meeting AI Analyser free for 7 days &rarr;</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="article-1">
         <div class="container" style="max-width:780px">
           <article>
             <div class="tag" style="display:inline-block;background:rgba(217,119,87,.1);color:#d97757;padding:.25rem .75rem;border-radius:1rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem">Privacy</div>

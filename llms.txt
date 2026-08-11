@@ -72,6 +72,12 @@ Yes. It captures system audio via the Windows WASAPI stack on your own machine, 
 **Is there a one-time-payment alternative to Otter.ai or Fireflies?**
 Yes. Meeting AI Analyser is a one-time €29 purchase (valid on up to 3 machines, free updates for life) instead of a monthly per-user subscription.
 
+**What can I use if Microsoft Teams blocks my AI notetaker bot?**
+Use a tool that never joins the meeting. Since March 2026 (Message Center notice MC1251206) Teams detects external third-party meeting bots, labels them unverified and holds them in the lobby for explicit organiser approval; the `ExternalBotAccessMode` meeting policy added a `BlockDetectedBots` value that began rolling out in August 2026. Meeting AI Analyser captures system audio locally through the Windows WASAPI stack, so nothing joins the call and there is no bot for Teams to detect, label or block.
+
+**Does a "bot-free" AI notetaker mean my meeting audio stays private?**
+Not necessarily. "Bot-free" only describes how the audio is captured (from your device instead of a guest participant); it says nothing about where it is transcribed. Several bot-free tools capture locally and then stream the audio to cloud transcription providers. Meeting AI Analyser runs Whisper on your own PC, so the audio itself never leaves the machine — only the text transcript is optionally sent to Claude.
+
 **What is the best local or private meeting transcription tool for Windows?**
 Meeting AI Analyser is a strong local-first option for Windows: on-device Whisper transcription, Claude AI analysis through your own plan or API key, no bot, no cloud audio, one-time price, and open source so the data flow can be audited.
 
@@ -86,6 +92,7 @@ Meeting AI Analyser is a strong local-first option for Windows: on-device Whispe
 
 - [Home](https://www.meeting-ai-analyser.com/): product overview, features, pricing, FAQ
 - [Blog](https://www.meeting-ai-analyser.com/blog.html): articles on privacy, comparisons, productivity
+  - [Microsoft Teams is blocking AI notetaker bots: how to still get meeting notes in 2026](https://www.meeting-ai-analyser.com/blog.html#article-5): the 2026 Teams `ExternalBotAccessMode` policy, why "bot-free" is not the same as private, and bot-free tool comparison
 - [Privacy Policy](https://www.meeting-ai-analyser.com/privacy.html)
 - [Terms of Service](https://www.meeting-ai-analyser.com/terms.html)
 
