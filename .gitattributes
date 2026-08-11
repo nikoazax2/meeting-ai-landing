@@ -1,0 +1,4 @@
+# The IndexNow key file must be served byte-for-byte as the key itself.
+# Without this, Git rewrites LF to CRLF on checkout and the trailing bytes can
+# make IndexNow reject the key with HTTP 403.
+607bac788ac14fc09b9037b3ea094752fcd6afeddd3a4aed8fff1292b42723d6.txt -text
