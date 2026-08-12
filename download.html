@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloading Meeting AI Analyser - Setup in 2 minutes</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta
+      name="description"
+      content="Your Meeting AI Analyser download is starting. Here is what Windows will show you, and the one setting to configure before your first meeting."
+    />
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="29759552-e590-4970-b2e8-724efbdefb83"
+    ></script>
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <meta name="theme-color" content="#ff6b1a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .dl-wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+      .dl-step {
+        display: flex; gap: 1rem; padding: 1.25rem 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+      }
+      .dl-step:last-child { border-bottom: 0; }
+      .dl-num {
+        flex: 0 0 28px; height: 28px; border-radius: 50%;
+        background: #d97757; color: #fff; font-weight: 700; font-size: 0.85rem;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .dl-step h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+      .dl-step p { margin: 0; font-size: 0.94rem; line-height: 1.65; opacity: 0.85; }
+      .dl-note {
+        border: 1px solid rgba(217, 119, 87, 0.4);
+        border-left: 3px solid #d97757;
+        border-radius: 10px; padding: 1.25rem 1.4rem; margin: 2rem 0;
+        background: rgba(217, 119, 87, 0.07);
+      }
+      .dl-note h2 { margin: 0 0 0.6rem; font-size: 1.1rem; }
+      .dl-note p { margin: 0 0 0.6rem; font-size: 0.94rem; line-height: 1.65; }
+      .dl-note p:last-child { margin-bottom: 0; }
+      .dl-kbd {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.86em; padding: 0.15em 0.45em; border-radius: 4px;
+        background: rgba(128, 128, 128, 0.18);
+      }
+      .dl-hero { text-align: center; margin-bottom: 2.5rem; }
+      .dl-hero h1 { font-size: 1.9rem; margin: 0 0 0.75rem; }
+      .dl-hero p { opacity: 0.8; margin: 0; }
+      .dl-fallback { font-size: 0.9rem; opacity: 0.75; margin-top: 1.25rem; }
+    </style>
+  </head>
+  <body>
+    <div class="dl-wrap">
+      <div class="dl-hero">
+        <h1>Your download is starting</h1>
+        <p>MeetingAIAnalyser-Setup.exe &middot; Windows 10 and 11 &middot; about 120&nbsp;MB</p>
+        <p class="dl-fallback">
+          Nothing happening?
+          <a
+            id="manualDownload"
+            href="https://github.com/nikoazax2/meeting-ai-analyser/releases/latest/download/MeetingAIAnalyser-Setup.exe"
+            data-umami-event="download-manual"
+            >Download it manually</a
+          >.
+        </p>
+      </div>
+
+      <!-- Told up front, a security warning reads as honesty. Discovered alone,
+           the same warning reads as malware and the install is abandoned. -->
+      <div class="dl-note">
+        <h2>Windows will show you a warning. That is expected.</h2>
+        <p>
+          You will see <strong>"Windows protected your PC"</strong> from Microsoft Defender
+          SmartScreen. Click <strong>More info</strong>, then <strong>Run anyway</strong>.
+        </p>
+        <p>
+          It appears because the installer is not code-signed yet, not because anything is
+          wrong with it. A signing certificate is in progress. Until then, you can verify
+          for yourself: the app is open source and every release is built from
+          <a href="https://github.com/nikoazax2/meeting-ai-analyser" target="_blank" rel="noopener"
+            >the public repository</a
+          >.
+        </p>
+      </div>
+
+      <h2 style="font-size: 1.3rem; margin: 2.5rem 0 0.5rem">Before your first meeting</h2>
+      <p style="opacity: 0.8; margin: 0 0 1rem">
+        Transcription runs on its own. The AI summaries need a Claude connection &mdash; this is
+        the one thing to set up, and it takes about two minutes.
+      </p>
+
+      <div class="dl-step">
+        <div class="dl-num">1</div>
+        <div>
+          <h3>Run the installer and launch the app</h3>
+          <p>
+            It installs for your user only, so no admin password is needed. The interface opens
+            in your browser at <span class="dl-kbd">localhost:5555</span> &mdash; everything runs
+            on your own machine.
+          </p>
+        </div>
+      </div>
+
+      <div class="dl-step">
+        <div class="dl-num">2</div>
+        <div>
+          <h3>Connect Claude, whichever way suits you</h3>
+          <p>
+            <strong>Already paying for Claude?</strong> Install
+            <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener"
+              >Claude Code</a
+            >, run <span class="dl-kbd">claude</span> once in a terminal to sign in, and restart
+            the app. No extra cost on top of your plan.<br /><br />
+            <strong>Prefer not to install a CLI?</strong> Open <strong>Settings</strong> in the app
+            and paste an
+            <a href="https://console.anthropic.com/" target="_blank" rel="noopener"
+              >Anthropic API key</a
+            >. No CLI, no subscription, a few cents per meeting.
+          </p>
+        </div>
+      </div>
+
+      <div class="dl-step">
+        <div class="dl-num">3</div>
+        <div>
+          <h3>Join any meeting</h3>
+          <p>
+            Teams, Zoom, Meet, Webex, or a phone call on speaker. Nothing joins the call and
+            nobody sees a recorder. Transcription appears on the left within seconds; the first
+            structured summary lands on the right after about a minute.
+          </p>
+        </div>
+      </div>
+
+      <div class="dl-note" style="margin-top: 2.5rem">
+        <h2>If the analysis panel stays empty</h2>
+        <p>
+          The app now tells you exactly why, right in that panel, with the fix. In nearly every
+          case it is Claude Code not being signed in &mdash; run <span class="dl-kbd">claude</span>
+          once in a terminal, or switch to an API key in Settings.
+        </p>
+        <p>
+          Still stuck? Email
+          <a href="mailto:nicolas@meeting-ai-analyser.com">nicolas@meeting-ai-analyser.com</a>
+          and tell me what the panel says. I answer every message personally.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem">
+        <p style="opacity: 0.8; margin-bottom: 1.25rem">
+          Your trial runs for 7 days. The license is a one-time &euro;29 &mdash; no subscription,
+          no per-seat fee, 14-day money-back guarantee.
+        </p>
+        <a
+          href="https://meetingai.lemonsqueezy.com/checkout/buy/08d1e75e-f0be-4522-94d6-08def3bf62ce"
+          target="_blank"
+          rel="noopener"
+          data-umami-event="buy-click"
+          data-umami-event-location="download-page"
+          class="btn btn-outline"
+          >Get the license now &mdash; &euro;29</a
+        >
+        <p style="margin-top: 2rem">
+          <a href="/" style="opacity: 0.7; font-size: 0.9rem">&larr; Back to meeting-ai-analyser.com</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Carry the acquisition source through to the app's "how did you hear
+      // about us" default, and start the download without an extra click.
+      (function () {
+        var params = new URLSearchParams(location.search);
+        var src = params.get("src") || params.get("utm_source") || "";
+        var link = document.getElementById("manualDownload");
+
+        if (src) {
+          try {
+            localStorage.setItem("mai_src", src);
+          } catch (e) {}
+          if (window.umami) window.umami.track("download-page-view", { src: src });
+        }
+
+        setTimeout(function () {
+          window.location.href = link.href;
+        }, 900);
+      })();
+    </script>
+  </body>
+</html>
